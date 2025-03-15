@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/switch.png</file>
+        <file>icons/flash_light_auto.png</file>
+        <file>icons/camera_live.png</file>
+        <file>icons/camera.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/share.png</file>
+        <file>icons/favorite.png</file>
+        <file>icons/info.png</file>
+        <file>icons/back.png</file>
+    </qresource>
+</RCC>

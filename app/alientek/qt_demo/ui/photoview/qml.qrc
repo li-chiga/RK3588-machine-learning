@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AppMainBody.qml</file>
+        <file>DeletePage.qml</file>
+        <file>DisplayPhoto.qml</file>
+        <file>PhotoListView.qml</file>
+        <file>PhotoViewLayout.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AppMainBody.qml</file>
+        <file>MediaListView.qml</file>
+        <file>MorePro.qml</file>
+        <file>PlayerLayout.qml</file>
+        <file>PlaySilder.qml</file>
+    </qresource>
+</RCC>

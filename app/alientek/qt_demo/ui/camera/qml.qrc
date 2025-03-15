@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>AppMainBody.qml</file>
+        <file>CameraLayout.qml</file>
+        <file>DeletePage.qml</file>
+        <file>ModelSelect.qml</file>
+    </qresource>
+</RCC>

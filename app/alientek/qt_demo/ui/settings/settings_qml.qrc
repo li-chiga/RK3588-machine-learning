@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>MainPage.qml</file>
+        <file>BrightnessVolume.qml</file>
+        <file>AppleID.qml</file>
+        <file>BackButton.qml</file>
+        <file>SettingsLayout.qml</file>
+    </qresource>
+</RCC>

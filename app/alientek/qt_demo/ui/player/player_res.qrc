@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/videoplayer_back_icon.png</file>
+        <file>icons/videoplayer_fullscreen_icon.png</file>
+        <file>icons/videoplayer_smallscreen_icon.png</file>
+        <file>icons/videoplayer_back_icon_top.png</file>
+        <file>icons/videoplayer_pause_icon.png</file>
+        <file>icons/videoplayer_play_icon.png</file>
+        <file>icons/videoplayer_more_icon.png</file>
+        <file>icons/player.png</file>
+    </qresource>
+</RCC>
