@@ -1,0 +1,33 @@
+#include <QGuiApplication>
+#include <QQmlApplicationEngine>
+#include <QQmlContext>
+#include "systemuicommonapiclient.h"
+#include "volumemonitor.h"
+
+int main(int argc, char *argv[])
+{
+#if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#endif
+    qputenv("QT_QUICK_BACKEND", "");
+    qputenv("GST_VIDEO_CONVERT_USE_RGA", "1");
+    qputenv("GST_VIDEO_FLIP_USE_RGA", "1");
+    QGuiApplication app(argc, argv);
+    qmlRegisterType<SystemUICommonApiClient>("com.alientek.qmlcomponents", 1, 0, "SystemUICommonApiClient");
+    qmlRegisterType<VolumeMonitor>("com.alientek.qmlcomponents", 1, 0, "VolumeMonitor");
+    QQmlApplicationEngine engine;
+    engine.rootContext()->setContextProperty("appCurrtentDir", QCoreApplication::applicationDirPath());
+    const QUrl url(QStringLiteral("qrc:/main.qml"));
+    QObject::connect(
+        &engine,
+        &QQmlApplicationEngine::objectCreated,
+        &app,
+        [url](QObject *obj, const QUrl &objUrl) {
+            if (!obj && url == objUrl)
+                QCoreApplication::exit(-1);
+        },
+        Qt::QueuedConnection);
+    engine.load(url);
+
+    return app.exec();
+}

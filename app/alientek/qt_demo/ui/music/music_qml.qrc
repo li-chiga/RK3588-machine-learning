@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Music.qml</file>
+        <file>PlayList.qml</file>
+        <file>Lyric.qml</file>
+        <file>PlayPanel.qml</file>
+        <file>ExclusiveRecommend.qml</file>
+        <file>SituationSelection.qml</file>
+        <file>SearchField.qml</file>
+        <file>Recommend.qml</file>
+        <file>ControlPanel.qml</file>
+        <file>CircleBar.qml</file>
+        <file>AlbumArt.qml</file>
+        <file>MusicLayout.qml</file>
+    </qresource>
+</RCC>

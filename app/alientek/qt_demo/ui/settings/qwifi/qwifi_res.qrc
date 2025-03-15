@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/qwifi">
+        <file>icons/wifi_connected_icon.png</file>
+        <file>icons/wifi_lock_icon.png</file>
+        <file>icons/white_handle_icon.png</file>
+        <file>icons/white_handle_icon_mirror.png</file>
+        <file>icons/password_eyes_open.png</file>
+        <file>icons/password_eyes_close.png</file>
+        <file>icons/wifi_info_icon.png</file>
+        <file>icons/wifi_process_icon.png</file>
+        <file>icons/back.png</file>
+        <file>icons/user_chose_rect_left.png</file>
+        <file>icons/user_chose_rect_normal.png</file>
+        <file>icons/user_chose_rect_right.png</file>
+        <file>icons/wifi_singal_medium.png</file>
+        <file>icons/wifi_singal_strong.png</file>
+        <file>icons/wifi_singal_weak.png</file>
+    </qresource>
+</RCC>

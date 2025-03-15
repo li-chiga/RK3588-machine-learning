@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/back.png</file>
+        <file>icons/photoview.png</file>
+        <file>icons/photo_checked.png</file>
+        <file>icons/photo_unchecked.png</file>
+        <file>icons/recommand_checked.png</file>
+        <file>icons/recommand_unchecked.png</file>
+        <file>icons/album_checked.png</file>
+        <file>icons/album_unchecked.png</file>
+        <file>icons/search_checked.png</file>
+        <file>icons/search_unchecked.png</file>
+        <file>icons/delete.png</file>
+        <file>icons/favorite.png</file>
+        <file>icons/share.png</file>
+        <file>icons/info.png</file>
+    </qresource>
+</RCC>

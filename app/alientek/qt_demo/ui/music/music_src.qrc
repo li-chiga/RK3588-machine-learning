@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/btn_play.png</file>
+        <file>icons/btn_pause.png</file>
+        <file>icons/btn_next.png</file>
+        <file>icons/btn_playlist.png</file>
+        <file>images/music_album_1.png</file>
+        <file>images/music_album_2.png</file>
+        <file>images/music_album_3.png</file>
+        <file>images/music_album_4.png</file>
+        <file>images/music_album_5.png</file>
+        <file>images/music_album_6.png</file>
+        <file>images/cd_outside.png</file>
+        <file>icons/mic_icon.png</file>
+        <file>icons/search_icon.png</file>
+        <file>icons/favorite_icon.png</file>
+        <file>icons/more_icon.png</file>
+        <file>icons/music_album_icon.png</file>
+        <file>icons/recommend_icon.png</file>
+        <file>icons/trophy_icon.png</file>
+        <file>icons/first_page_icon.png</file>
+        <file>icons/listen_icon.png</file>
+        <file>icons/live_icon.png</file>
+        <file>icons/mine_icon.png</file>
+        <file>images/albumart_bg.jpg</file>
+        <file>images/art_album_mask.png</file>
+        <file>images/cd_inside_mask.png</file>
+        <file>icons/btn_style1/btn_pause.png</file>
+        <file>icons/btn_style1/btn_play.png</file>
+        <file>icons/btn_style1/btn_next.png</file>
+        <file>icons/btn_style1/btn_previous.png</file>
+        <file>icons/btn_style1/btn_down.png</file>
+        <file>icons/btn_style1/btn_playlist.png</file>
+        <file>icons/btn_style1/btn_listjump.png</file>
+        <file>icons/btn_style1/btn_listrandom.png</file>
+        <file>icons/btn_style1/btn_listscircle_single.png</file>
+        <file>icons/btn_style1/btn_listsingle.png</file>
+        <file>images/share.png</file>
+        <file>icons/music.png</file>
+    </qresource>
+</RCC>

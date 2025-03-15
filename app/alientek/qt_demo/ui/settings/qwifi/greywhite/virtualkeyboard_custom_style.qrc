@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/CustomStyle/QtQuick/VirtualKeyboard/Styles/greywhite">
+        <file>style.qml</file>
+        <file>images/shift-c5d6b6.svg</file>
+        <file>images/shift-ff6600.svg</file>
+        <file>images/backspace-black.svg</file>
+        <file>images/shift-black.svg</file>
+        <file>images/enter-black.svg</file>
+        <file>images/hidekeyboard-black.svg</file>
+        <file>images/globe-black.svg</file>
+        <file>images/textmode-black.svg</file>
+        <file>images/selectionhandle-bottom-black.svg</file>
+        <file>images/search-black.svg</file>
+        <file>images/check-black.svg</file>
+        <file>images/handwriting-black.svg</file>
+    </qresource>
+    <qresource prefix="/images"/>
+</RCC>
