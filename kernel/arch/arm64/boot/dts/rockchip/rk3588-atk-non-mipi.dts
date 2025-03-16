@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2021 Rockchip Electronics Co., Ltd.
+ *
+ */
+
+/dts-v1/;
+
+#define ATK_LCD_TYPE_MIPI_TX0_5P5_1080X1920
+#define ATK_LCD_TYPE_HDMI_TX0
+#define ATK_LCD_TYPE_HDMI_TX1
+#define ATK_LCD_TYPE_DP_TX0
+#define ATK_LCD_TYPE_DP_TX1
+
+#include "rk3588-atk-devkit.dtsi"
+#include "rk3588-atk-cameras.dtsi"
+#include "rk3588-atk-lcds.dtsi"
+#include "rk3588-linux.dtsi"
+
+/ {
+	model = "ATK-DLRK3588 Board";
+	compatible = "rockchip,rk3588-evb7-lp4-v10", "rockchip,rk3588";
+};

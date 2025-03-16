@@ -1,0 +1,1229 @@
+
+/ {
+	backlight1: backlight1 {
+		compatible = "pwm-backlight";
+		pwms = <&pwm15 0 25000 0>;
+		brightness-levels = <
+			  0  20  20  21  21  22  22  23
+			 23  24  24  25  25  26  26  27
+			 27  28  28  29  29  30  30  31
+			 31  32  32  33  33  34  34  35
+			 35  36  36  37  37  38  38  39
+			 40  41  42  43  44  45  46  47
+			 48  49  50  51  52  53  54  55
+			 56  57  58  59  60  61  62  63
+			 64  65  66  67  68  69  70  71
+			 72  73  74  75  76  77  78  79
+			 80  81  82  83  84  85  86  87
+			 88  89  90  91  92  93  94  95
+			 96  97  98  99 100 101 102 103
+			104 105 106 107 108 109 110 111
+			112 113 114 115 116 117 118 119
+			120 121 122 123 124 125 126 127
+			128 129 130 131 132 133 134 135
+			136 137 138 139 140 141 142 143
+			144 145 146 147 148 149 150 151
+			152 153 154 155 156 157 158 159
+			160 161 162 163 164 165 166 167
+			168 169 170 171 172 173 174 175
+			176 177 178 179 180 181 182 183
+			184 185 186 187 188 189 190 191
+			192 193 194 195 196 197 198 199
+			200 201 202 203 204 205 206 207
+			208 209 210 211 212 213 214 215
+			216 217 218 219 220 221 222 223
+			224 225 226 227 228 229 230 231
+			232 233 234 235 236 237 238 239
+			240 241 242 243 244 245 246 247
+			248 249 250 251 252 253 254 255
+		>;
+		default-brightness-level = <255>;
+		status = "disabled";
+	};
+};
+
+&disp_timings0 {
+	mipi0_5p5_1080x1920_timing: timing0 {
+		/*
+		clock-frequency = <136000000>;
+		hactive = <1080>;
+		vactive = <1920>;
+		hfront-porch = <45>;
+		hsync-len = <45>;
+		hback-porch = <5>;
+		vfront-porch = <9>;
+		vsync-len = <4>;
+		vback-porch = <3>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+		*/
+
+		clock-frequency = <119000000>;
+		hactive = <1080>;
+		vactive = <1920>;
+		hfront-porch = <10>;
+		hsync-len = <6>;
+		hback-porch = <32>;
+		vfront-porch = <20>;
+		vsync-len = <6>;
+		vback-porch = <10>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+	};
+
+	mipi0_5p5_720x1280_timing: timing1 {
+		clock-frequency = <65000000>;
+		hactive = <720>;
+		vactive = <1280>;
+		hfront-porch = <48>;
+		hsync-len = <8>;
+		hback-porch = <52>;
+		vfront-porch = <16>;
+		vsync-len = <6>;
+		vback-porch = <15>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+	};
+
+	mipi0_10p1_800x1280_timing: timing2 {
+		clock-frequency = <67000000>;
+		hactive = <800>;
+		vactive = <1280>;
+		hfront-porch = <12>;
+		hsync-len = <24>;
+		hback-porch = <24>;
+		vfront-porch = <7>;
+		vsync-len = <2>;
+		vback-porch = <9>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+	};
+};
+
+&disp_timings1 {
+	mipi1_5p5_1080x1920_timing: timing0 {
+		/*
+		clock-frequency = <136000000>;
+		hactive = <1080>;
+		vactive = <1920>;
+		hfront-porch = <45>;
+		hsync-len = <45>;
+		hback-porch = <5>;
+		vfront-porch = <9>;
+		vsync-len = <4>;
+		vback-porch = <3>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+		*/
+
+		clock-frequency = <119000000>;
+		hactive = <1080>;
+		vactive = <1920>;
+		hfront-porch = <10>;
+		hsync-len = <6>;
+		hback-porch = <32>;
+		vfront-porch = <20>;
+		vsync-len = <6>;
+		vback-porch = <10>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+	};
+
+	mipi1_5p5_720x1280_timing: timing1 {
+		clock-frequency = <65000000>;
+		hactive = <720>;
+		vactive = <1280>;
+		hfront-porch = <48>;
+		hsync-len = <8>;
+		hback-porch = <52>;
+		vfront-porch = <16>;
+		vsync-len = <6>;
+		vback-porch = <15>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+	};
+
+	mipi1_10p1_800x1280_timing: timing2 {
+		clock-frequency = <67000000>;
+		hactive = <800>;
+		vactive = <1280>;
+		hfront-porch = <12>;
+		hsync-len = <24>;
+		hback-porch = <24>;
+		vfront-porch = <7>;
+		vsync-len = <2>;
+		vback-porch = <9>;
+		hsync-active = <0>;
+		vsync-active = <0>;
+		de-active = <0>;
+		pixelclk-active = <0>;
+	};
+};
+
+
+/******************** 背光 ********************/
+&backlight {
+	pwms = <&pwm1 0 25000 0>;
+	default-brightness-level = <255>;
+	status = "disabled";
+};
+/******************** END ********************/
+
+
+/******************** 触摸屏 ********************/
+&i2c5 {
+	dsi0_touch: gt911@14 {
+		compatible = "goodix,gt9xx";
+		reg = <0x14>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&touch0_gpio>;
+		touch-gpio = <&gpio3 RK_PC0 IRQ_TYPE_LEVEL_LOW>;
+		reset-gpio = <&gpio3 RK_PC1 GPIO_ACTIVE_HIGH>;
+		max-x = <1080>;
+		max-y = <1920>;
+		tp-size = <911>;
+		tp-supply = <&vcc5v0_sys>;
+		wakeup-source;
+		goodix-ts-name = "dsi0_ts_gt9xx";
+		vendor-id = <0xABCD>;
+		product-id = <0x1234>;
+		status = "disabled";
+	};
+};
+
+&i2c6 {
+	dsi1_touch: gt911@14 {
+		compatible = "goodix,gt9xx";
+		reg = <0x14>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&touch1_gpio>;
+		touch-gpio = <&gpio3 RK_PD5 IRQ_TYPE_LEVEL_LOW>;
+		reset-gpio = <&gpio3 RK_PA6 GPIO_ACTIVE_HIGH>;
+		max-x = <1080>;
+		max-y = <1920>;
+		tp-size = <911>;
+		tp-supply = <&vcc5v0_sys>;
+		wakeup-source;
+		goodix-ts-name = "dsi1_ts_gt9xx";
+		vendor-id = <0xABCD>;
+		product-id = <0x1235>;
+		status = "disabled";
+	};
+};
+/******************** END ********************/
+
+
+/******************** MIPI DSI TX0 ********************/
+&dsi0 {
+	status = "disabled";
+};
+
+&dsi0_in_vp2 {
+	status = "disabled";
+};
+
+&dsi0_in_vp3 {
+	status = "disabled";
+};
+
+&route_dsi0 {
+	status = "disabled";
+};
+
+//此为MIPI DCPHY(MIPI D/C Combo PHY)
+//RK3588支持两个MIPI DCPHY, 每个DCPHY硬件上支持RX/TX同时使用
+//MIPI CSI摄像头使用RX, MIPI DSI显示屏使用TX
+//
+//&mipi_dcphy0 {
+//	status = "disabled";
+//};
+
+&dsi0_panel {
+	power-supply = <&vcc5v0_sys>;
+	reset-gpios = <&gpio4 RK_PA3 GPIO_ACTIVE_LOW>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&lcd0_rst_gpio>;
+	reset-delay-ms = <100>;
+	init-delay-ms = <80>;
+
+	panel-exit-sequence = [
+		05 32 01 28
+		05 C8 01 10
+	];
+	status = "disabled";
+};
+
+//触摸屏设备节点
+
+//背光设备节点
+/******************** END ********************/
+
+
+/******************** MIPI DSI TX1 ********************/
+&dsi1 {
+	status = "disabled";
+};
+
+&dsi1_in_vp2 {
+	status = "disabled";
+};
+
+&dsi1_in_vp3 {
+	status = "disabled";
+};
+
+&route_dsi1 {
+	status = "disabled";
+};
+
+//&mipi_dcphy1 {
+//	status = "disabled";
+//};
+
+&dsi1_panel {
+	backlight = <&backlight1>;
+	power-supply = <&vcc5v0_sys>;
+	reset-gpios = <&gpio4 RK_PA4 GPIO_ACTIVE_LOW>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&lcd1_rst_gpio>;
+	reset-delay-ms = <100>;
+	init-delay-ms = <80>;
+
+	panel-exit-sequence = [
+		05 32 01 28
+		05 C8 01 10
+	];
+	status = "disabled";
+};
+
+//触摸屏设备节点
+
+//背光设备节点
+/******************** END ********************/
+
+
+/******************** HDMI TX0 ********************/
+//<!- HDMI TX0与EDP TX0不可同时使能 ->
+&hdmi0 {
+	enable-gpios = <&gpio4 RK_PB1 GPIO_ACTIVE_HIGH>;
+	status = "disabled";
+};
+
+&hdmi0_in_vp0 {
+	status = "disabled";
+};
+
+&hdmi0_in_vp1 {
+	status = "disabled";
+};
+
+&hdmi0_in_vp2 {
+	status = "disabled";
+};
+
+&route_hdmi0 {
+	status = "disabled";
+};
+
+&hdptxphy_hdmi0 {
+	status = "disabled";
+};
+
+&hdmi0_sound { //i2s5_8ch
+	status = "disabled";
+};
+/******************** END ********************/
+
+
+/******************** HDMI TX1 ********************/
+//<!- HDMI TX1与EDP TX1不可同时使能 ->
+&hdmi1 {
+	enable-gpios = <&gpio0 RK_PC4 GPIO_ACTIVE_HIGH>;
+	status = "disabled";
+};
+
+&hdmi1_in_vp0 {
+	status = "disabled";
+};
+
+&hdmi1_in_vp1 {
+	status = "disabled";
+};
+
+&hdmi1_in_vp2 {
+	status = "disabled";
+};
+
+&route_hdmi1 {
+	status = "disabled";
+};
+
+&hdptxphy_hdmi1 {
+	status = "disabled";
+};
+
+&hdmi1_sound { //i2s6_8ch
+	status = "disabled";
+};
+/******************** END ********************/
+
+
+/******************** EDP TX0 ********************/
+//<!- HDMI TX0与EDP TX0不可同时使能 ->
+&edp0 {
+	status = "disabled";
+};
+
+&edp0_in_vp0 {
+	status = "disabled";
+};
+
+&edp0_in_vp1 {
+	status = "disabled";
+};
+
+&edp0_in_vp2 {
+	status = "disabled";
+};
+
+&route_edp0 {
+	status = "disabled";
+};
+
+&hdptxphy0 {
+	status = "disabled";
+};
+
+//触摸屏设备节点
+
+//edp0_panel
+
+//背光设备节点
+/******************** END ********************/
+
+
+/******************** EDP TX1 ********************/
+//<!- HDMI TX1与EDP TX1不可同时使能 ->
+&edp1 {
+	status = "disabled";
+};
+
+&edp1_in_vp0 {
+	status = "disabled";
+};
+
+&edp1_in_vp1 {
+	status = "disabled";
+};
+
+&edp1_in_vp2 {
+	status = "disabled";
+};
+
+&route_edp1 {
+	status = "disabled";
+};
+
+&hdptxphy1 {
+	status = "disabled";
+};
+
+//触摸屏设备节点
+
+//edp1_panel
+
+//背光设备节点
+/******************** END ********************/
+
+
+/******************** DP TX0 ********************/
+&dp0 {
+	status = "disabled";
+};
+
+&dp0_in_vp0 {
+	status = "disabled";
+};
+
+&dp0_in_vp1 {
+	status = "disabled";
+};
+
+&dp0_in_vp2 {
+	status = "disabled";
+};
+
+&route_dp0 {
+	status = "disabled";
+};
+
+//RK3588支持两个USB3.0/DP1.4 Combo PHY
+&usbdp_phy0_dp { //usbdp_phy0的子节点
+	status = "disabled";
+};
+
+&dp0_sound { //spdif_tx2
+	status = "disabled";
+};
+/******************** END ********************/
+
+
+/******************** DP TX1 ********************/
+&dp1 {
+	status = "disabled";
+};
+
+&dp1_in_vp0 {
+	status = "disabled";
+};
+
+&dp1_in_vp1 {
+	status = "disabled";
+};
+
+&dp1_in_vp2 {
+	status = "disabled";
+};
+
+&route_dp1 {
+	status = "disabled";
+};
+
+&usbdp_phy1_dp { //usbdp_phy1的子节点
+	status = "disabled";
+};
+
+&dp1_sound { //spdif_tx5
+	status = "disabled";
+};
+/******************** END ********************/
+
+#if defined(ATK_LCD_TYPE_MIPI_TX0_5P5_720X1280) || defined(ATK_LCD_TYPE_MIPI_TX0_5P5_1080X1920) || defined(ATK_LCD_TYPE_MIPI_TX0_10P1_800X1280)
+&dsi0 {
+	status = "okay";
+};
+
+&dsi0_in_vp3 {
+	status = "okay";
+};
+
+&route_dsi0 {
+	status = "okay";
+	connect = <&vp3_out_dsi0>;
+};
+
+&dsi0_panel {
+	status = "okay";
+};
+
+&dsi0_touch {
+	status = "okay";
+};
+
+&backlight {
+	status = "okay";
+};
+#endif
+
+#if defined(ATK_LCD_TYPE_MIPI_TX0_5P5_720X1280)
+&disp_timings0 {
+	native-mode = <&mipi0_5p5_720x1280_timing>;
+};
+
+&dsi0_panel {
+	panel-init-sequence = [
+		39 00 04 B9 FF 83 94
+		39 00 07 BA 63 03 68 6B B2 C0
+		//15 00 02 36 01(倒向显示)
+		//15 00 02 36 02(正向显示)
+		15 00 02 36 01
+		39 00 0B B1 48 12 72 09 32 54 71 71 57 47
+		39 00 07 B2 00 80 64 0C 0D 2F
+		39 00 16 B4 73 74 73 74 73 74 01 0C 86 75 00 3F 73 74 73 74 73 74 01 0C 86
+		39 00 03 B6 6E 6E
+		39 00 22 D3 00 00 07 07 40 07 0C 00 08 10 08 00 08 54 15 0A 05 0A 02 15 06 05 06 47 44 0A 0A 4B 10 07 07 0C 40
+		39 00 2D D5 1C 1C 1D 1D 00 01 02 03 04 05 06 07 08 09 0A 0B 24 25 18 18 26 27 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 20 21 18 18 18 18
+		39 00 2D D6 1C 1C 1D 1D 07 06 05 04 03 02 01 00 0B 0A 09 08 21 20 18 18 27 26 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 25 24 18 18 18 18
+		39 00 3B E0 00 0A 15 1B 1E 21 24 22 47 56 65 66 6E 82 88 8B 9A 9D 98 A8 B9 5D 5C 61 66 6A 6F 7F 7F 00 0A 15 1B 1E 21 24 22 47 56 65 65 6E 81 87 8B 98 9D 99 A8 BA 5D 5D 62 67 6B 72 7F 7F
+		39 00 03 C0 1F 31
+		15 00 02 CC 03
+		15 00 02 D4 02
+		15 00 02 BD 02
+		39 00 0D D8 FF FF FF FF FF FF FF FF FF FF FF FF
+		15 00 02 BD 00
+		15 00 02 BD 01
+		15 00 02 B1 00
+		15 00 02 BD 00
+		39 00 08 BF 40 81 50 00 1A FC 01
+		15 00 02 C6 ED
+		05 64 01 11
+		05 78 01 29
+	];
+};
+
+#elif defined(ATK_LCD_TYPE_MIPI_TX0_5P5_1080X1920)
+&disp_timings0 {
+	native-mode = <&mipi0_5p5_1080x1920_timing>;
+};
+
+&dsi0_panel {
+	panel-init-sequence = [
+		39 00 04 B9 FF 83 99
+		15 00 02 D2 77
+		//15 00 02 CC 04(倒向显示)
+		//15 00 02 CC 08(正向显示)
+		15 00 02 CC 04
+		39 00 10 B1 02 04 74 94 01 32 33 11 11 AB 4D 56 73 02 02
+		39 00 10 B2 00 80 80 AE 05 07 5A 11 00 00 10 1E 70 03 D4
+		39 00 2D B4 00 FF 02 C0 02 C0 00 00 08 00 04 06 00 32 04 0A 08 21 03 01 00 0F B8 8B 02 C0 02 C0 00 00 08 00 04 06 00 32 04 0A 08 01 00 0F B8 01
+		39 05 22 D3 00 00 00 00 00 00 06 00 00 10 04 00 04 00 00 00 00 00 00 00 00 00 00 01 00 05 05 07 00 00 00 05 40
+		39 05 21 D5 18 18 19 19 18 18 21 20 01 00 07 06 05 04 03 02 18 18 18 18 18 18 2F 2F 30 30 31 31 18 18 18 18
+		39 05 21 D6 18 18 19 19 40 40 20 21 02 03 04 05 06 07 00 01 40 40 40 40 40 40 2F 2F 30 30 31 31 40 40 40 40
+		39 00 11 D8 A2 AA 02 A0 A2 A8 02 A0 B0 00 00 00 B0 00 00 00
+		15 00 02 BD 01
+		39 00 11 D8 B0 00 00 00 B0 00 00 00 E2 AA 03 F0 E2 AA 03 F0
+		15 00 02 BD 02
+		39 00 09 D8 E2 AA 03 F0 E2 AA 03 F0
+		15 00 02 BD 00
+		39 00 03 B6 8D 8D
+		39 05 37 E0 00 0E 19 13 2E 39 48 44 4D 57 5F 66 6C 76 7F 85 8A 95 9A A4 9B AB B0 5C 58 64 77 00 0E 19 13 2E 39 48 44 4D 57 5F 66 6C 76 7F 85 8A 95 9A A4 9B AB B0 5C 58 64 77
+		05 c8 01 11
+		05 ff 01 29
+	];
+};
+
+#elif defined(ATK_LCD_TYPE_MIPI_TX0_10P1_800X1280)
+&disp_timings0 {
+	native-mode = <&mipi0_10p1_800x1280_timing>;
+};
+
+&dsi0_panel {
+	panel-init-sequence = [
+		39 05 04 FF 98 81 03
+		05 05 02 01 00
+		05 05 02 02 00
+		05 05 02 03 53
+		05 05 02 04 D3
+		05 05 02 05 00
+		05 05 02 06 0D
+		05 05 02 07 08
+		05 05 02 08 00
+		05 05 02 09 00
+		05 05 02 0a 00
+		05 05 02 0b 00
+		05 05 02 0c 00
+		05 05 02 0d 00
+		05 05 02 0e 00
+		05 05 02 0f 28
+		05 05 02 10 28
+		05 05 02 11 00
+		05 05 02 12 00
+		05 05 02 13 00
+		05 05 02 14 00
+		05 05 02 15 00
+		05 05 02 16 00
+		05 05 02 17 00
+		05 05 02 18 00
+		05 05 02 19 00
+		05 05 02 1a 00
+		05 05 02 1b 00
+		05 05 02 1c 00
+		05 05 02 1d 00
+		05 05 02 1e 40
+		05 05 02 1f 80
+		05 05 02 20 06
+		05 05 02 21 01
+		05 05 02 22 00
+		05 05 02 23 00
+		05 05 02 24 00
+		05 05 02 25 00
+		05 05 02 26 00
+		05 05 02 27 00
+		05 05 02 28 33
+		05 05 02 29 33
+		05 05 02 2a 00
+		05 05 02 2b 00
+		05 05 02 2c 00
+		05 05 02 2d 00
+		05 05 02 2e 00
+		05 05 02 2f 00
+		05 05 02 30 00
+		05 05 02 31 00
+		05 05 02 32 00
+		05 05 02 33 00
+		05 05 02 34 03
+		05 05 02 35 00
+		05 05 02 36 00
+		05 05 02 37 00
+		05 05 02 38 96
+		05 05 02 39 00
+		05 05 02 3a 00
+		05 05 02 3b 00
+		05 05 02 3c 00
+		05 05 02 3d 00
+		05 05 02 3e 00
+		05 05 02 3f 00
+		05 05 02 40 00
+		05 05 02 41 00
+		05 05 02 42 00
+		05 05 02 43 00
+		05 05 02 44 00
+		05 05 02 50 00
+		05 05 02 51 23
+		05 05 02 52 45
+		05 05 02 53 67
+		05 05 02 54 89
+		05 05 02 55 AB
+		05 05 02 56 01
+		05 05 02 57 23
+		05 05 02 58 45
+		05 05 02 59 67
+		05 05 02 5a 89
+		05 05 02 5b AB
+		05 05 02 5c CD
+		05 05 02 5d EF
+		05 05 02 5e 00
+		05 05 02 5f 08
+		05 05 02 60 08
+		05 05 02 61 06
+		05 05 02 62 06
+		05 05 02 63 01
+		05 05 02 64 01
+		05 05 02 65 00
+		05 05 02 66 00
+		05 05 02 67 02
+		05 05 02 68 15
+		05 05 02 69 15
+		05 05 02 6a 14
+		05 05 02 6b 14
+		05 05 02 6c 0D
+		05 05 02 6d 0D
+		05 05 02 6e 0C
+		05 05 02 6f 0C
+		05 05 02 70 0F
+		05 05 02 71 0F
+		05 05 02 72 0E
+		05 05 02 73 0E
+		05 05 02 74 02
+		05 05 02 75 08
+		05 05 02 76 08
+		05 05 02 77 06
+		05 05 02 78 06
+		05 05 02 79 01
+		05 05 02 7a 01
+		05 05 02 7b 00
+		05 05 02 7c 00
+		05 05 02 7d 02
+		05 05 02 7e 15
+		05 05 02 7f 15
+		05 05 02 80 14
+		05 05 02 81 14
+		05 05 02 82 0D
+		05 05 02 83 0D
+		05 05 02 84 0C
+		05 05 02 85 0C
+		05 05 02 86 0F
+		05 05 02 87 0F
+		05 05 02 88 0E
+		05 05 02 89 0E
+		05 05 02 8A 02
+		39 05 04 FF 98 81 04
+		05 05 02 6E 2B
+		05 05 02 6F 37
+		05 05 02 3A 24
+		05 05 02 8D 1A
+		05 05 02 87 BA
+		05 05 02 B2 D1
+		05 05 02 88 0B
+		05 05 02 38 01
+		05 05 02 39 00
+		05 05 02 B5 02
+		05 05 02 31 25
+		05 05 02 3B 98
+		39 05 04 FF 98 81 01
+		05 05 02 22 0A
+		05 05 02 31 00
+		05 05 02 53 3D
+		05 05 02 55 3D
+		05 05 02 50 B5
+		05 05 02 51 AD
+		05 05 02 60 06
+		05 05 02 62 20
+		05 05 02 A0 00
+		05 05 02 A1 21
+		05 05 02 A2 35
+		05 05 02 A3 19
+		05 05 02 A4 1E
+		05 05 02 A5 33
+		05 05 02 A6 27
+		05 05 02 A7 26
+		05 05 02 A8 AF
+		05 05 02 A9 1B
+		05 05 02 AA 27
+		05 05 02 AB 8D
+		05 05 02 AC 1A
+		05 05 02 AD 1B
+		05 05 02 AE 50
+		05 05 02 AF 26
+		05 05 02 B0 2B
+		05 05 02 B1 54
+		05 05 02 B2 5E
+		05 05 02 B3 23
+		05 05 02 C0 00
+		05 05 02 C1 21
+		05 05 02 C2 35
+		05 05 02 C3 19
+		05 05 02 C4 1E
+		05 05 02 C5 33
+		05 05 02 C6 27
+		05 05 02 C7 26
+		05 05 02 C8 AF
+		05 05 02 C9 1B
+		05 05 02 CA 27
+		05 05 02 CB 8D
+		05 05 02 CC 1A
+		05 05 02 CD 1B
+		05 05 02 CE 50
+		05 05 02 CF 26
+		05 05 02 D0 2B
+		05 05 02 D1 54
+		05 05 02 D2 5E
+		05 05 02 D3 23
+		39 05 04 FF 98 81 00
+		05 05 02 11 00
+		05 78 02 29 00
+		05 78 02 35 00
+	];
+};
+#endif
+
+#if defined(ATK_LCD_TYPE_MIPI_TX1_5P5_720X1280) || defined(ATK_LCD_TYPE_MIPI_TX1_5P5_1080X1920) || defined(ATK_LCD_TYPE_MIPI_TX1_10P1_800X1280)
+&dsi1 {
+	status = "okay";
+};
+
+&dsi1_in_vp3 {
+	status = "okay";
+};
+
+&route_dsi1 {
+	status = "okay";
+	connect = <&vp3_out_dsi1>;
+};
+
+&dsi1_panel {
+	status = "okay";
+};
+
+&dsi1_touch {
+	status = "okay";
+};
+
+&backlight1 {
+	status = "okay";
+};
+#endif
+
+#if defined(ATK_LCD_TYPE_MIPI_TX1_5P5_720X1280)
+&disp_timings1 {
+	native-mode = <&mipi1_5p5_720x1280_timing>;
+};
+
+&dsi1_panel {
+	panel-init-sequence = [
+		39 00 04 B9 FF 83 94
+		39 00 07 BA 63 03 68 6B B2 C0
+		//15 00 02 36 01(倒向显示)
+		//15 00 02 36 02(正向显示)
+		15 00 02 36 01
+		39 00 0B B1 48 12 72 09 32 54 71 71 57 47
+		39 00 07 B2 00 80 64 0C 0D 2F
+		39 00 16 B4 73 74 73 74 73 74 01 0C 86 75 00 3F 73 74 73 74 73 74 01 0C 86
+		39 00 03 B6 6E 6E
+		39 00 22 D3 00 00 07 07 40 07 0C 00 08 10 08 00 08 54 15 0A 05 0A 02 15 06 05 06 47 44 0A 0A 4B 10 07 07 0C 40
+		39 00 2D D5 1C 1C 1D 1D 00 01 02 03 04 05 06 07 08 09 0A 0B 24 25 18 18 26 27 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 20 21 18 18 18 18
+		39 00 2D D6 1C 1C 1D 1D 07 06 05 04 03 02 01 00 0B 0A 09 08 21 20 18 18 27 26 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 25 24 18 18 18 18
+		39 00 3B E0 00 0A 15 1B 1E 21 24 22 47 56 65 66 6E 82 88 8B 9A 9D 98 A8 B9 5D 5C 61 66 6A 6F 7F 7F 00 0A 15 1B 1E 21 24 22 47 56 65 65 6E 81 87 8B 98 9D 99 A8 BA 5D 5D 62 67 6B 72 7F 7F
+		39 00 03 C0 1F 31
+		15 00 02 CC 03
+		15 00 02 D4 02
+		15 00 02 BD 02
+		39 00 0D D8 FF FF FF FF FF FF FF FF FF FF FF FF
+		15 00 02 BD 00
+		15 00 02 BD 01
+		15 00 02 B1 00
+		15 00 02 BD 00
+		39 00 08 BF 40 81 50 00 1A FC 01
+		15 00 02 C6 ED
+		05 64 01 11
+		05 78 01 29
+	];
+};
+
+#elif defined(ATK_LCD_TYPE_MIPI_TX1_5P5_1080X1920)
+&disp_timings1 {
+	native-mode = <&mipi1_5p5_1080x1920_timing>;
+};
+
+&dsi1_panel {
+	panel-init-sequence = [
+		39 00 04 B9 FF 83 99
+		15 00 02 D2 77
+		//15 00 02 CC 04(倒向显示)
+		//15 00 02 CC 08(正向显示)
+		15 00 02 CC 04
+		39 00 10 B1 02 04 74 94 01 32 33 11 11 AB 4D 56 73 02 02
+		39 00 10 B2 00 80 80 AE 05 07 5A 11 00 00 10 1E 70 03 D4
+		39 00 2D B4 00 FF 02 C0 02 C0 00 00 08 00 04 06 00 32 04 0A 08 21 03 01 00 0F B8 8B 02 C0 02 C0 00 00 08 00 04 06 00 32 04 0A 08 01 00 0F B8 01
+		39 05 22 D3 00 00 00 00 00 00 06 00 00 10 04 00 04 00 00 00 00 00 00 00 00 00 00 01 00 05 05 07 00 00 00 05 40
+		39 05 21 D5 18 18 19 19 18 18 21 20 01 00 07 06 05 04 03 02 18 18 18 18 18 18 2F 2F 30 30 31 31 18 18 18 18
+		39 05 21 D6 18 18 19 19 40 40 20 21 02 03 04 05 06 07 00 01 40 40 40 40 40 40 2F 2F 30 30 31 31 40 40 40 40
+		39 00 11 D8 A2 AA 02 A0 A2 A8 02 A0 B0 00 00 00 B0 00 00 00
+		15 00 02 BD 01
+		39 00 11 D8 B0 00 00 00 B0 00 00 00 E2 AA 03 F0 E2 AA 03 F0
+		15 00 02 BD 02
+		39 00 09 D8 E2 AA 03 F0 E2 AA 03 F0
+		15 00 02 BD 00
+		39 00 03 B6 8D 8D
+		39 05 37 E0 00 0E 19 13 2E 39 48 44 4D 57 5F 66 6C 76 7F 85 8A 95 9A A4 9B AB B0 5C 58 64 77 00 0E 19 13 2E 39 48 44 4D 57 5F 66 6C 76 7F 85 8A 95 9A A4 9B AB B0 5C 58 64 77
+		05 c8 01 11
+		05 ff 01 29
+	];
+};
+
+#elif defined(ATK_LCD_TYPE_MIPI_TX1_10P1_800X1280)
+&disp_timings1 {
+	native-mode = <&mipi1_10p1_800x1280_timing>;
+};
+
+&dsi1_panel {
+	panel-init-sequence = [
+		39 05 04 FF 98 81 03
+		05 05 02 01 00
+		05 05 02 02 00
+		05 05 02 03 53
+		05 05 02 04 D3
+		05 05 02 05 00
+		05 05 02 06 0D
+		05 05 02 07 08
+		05 05 02 08 00
+		05 05 02 09 00
+		05 05 02 0a 00
+		05 05 02 0b 00
+		05 05 02 0c 00
+		05 05 02 0d 00
+		05 05 02 0e 00
+		05 05 02 0f 28
+		05 05 02 10 28
+		05 05 02 11 00
+		05 05 02 12 00
+		05 05 02 13 00
+		05 05 02 14 00
+		05 05 02 15 00
+		05 05 02 16 00
+		05 05 02 17 00
+		05 05 02 18 00
+		05 05 02 19 00
+		05 05 02 1a 00
+		05 05 02 1b 00
+		05 05 02 1c 00
+		05 05 02 1d 00
+		05 05 02 1e 40
+		05 05 02 1f 80
+		05 05 02 20 06
+		05 05 02 21 01
+		05 05 02 22 00
+		05 05 02 23 00
+		05 05 02 24 00
+		05 05 02 25 00
+		05 05 02 26 00
+		05 05 02 27 00
+		05 05 02 28 33
+		05 05 02 29 33
+		05 05 02 2a 00
+		05 05 02 2b 00
+		05 05 02 2c 00
+		05 05 02 2d 00
+		05 05 02 2e 00
+		05 05 02 2f 00
+		05 05 02 30 00
+		05 05 02 31 00
+		05 05 02 32 00
+		05 05 02 33 00
+		05 05 02 34 03
+		05 05 02 35 00
+		05 05 02 36 00
+		05 05 02 37 00
+		05 05 02 38 96
+		05 05 02 39 00
+		05 05 02 3a 00
+		05 05 02 3b 00
+		05 05 02 3c 00
+		05 05 02 3d 00
+		05 05 02 3e 00
+		05 05 02 3f 00
+		05 05 02 40 00
+		05 05 02 41 00
+		05 05 02 42 00
+		05 05 02 43 00
+		05 05 02 44 00
+		05 05 02 50 00
+		05 05 02 51 23
+		05 05 02 52 45
+		05 05 02 53 67
+		05 05 02 54 89
+		05 05 02 55 AB
+		05 05 02 56 01
+		05 05 02 57 23
+		05 05 02 58 45
+		05 05 02 59 67
+		05 05 02 5a 89
+		05 05 02 5b AB
+		05 05 02 5c CD
+		05 05 02 5d EF
+		05 05 02 5e 00
+		05 05 02 5f 08
+		05 05 02 60 08
+		05 05 02 61 06
+		05 05 02 62 06
+		05 05 02 63 01
+		05 05 02 64 01
+		05 05 02 65 00
+		05 05 02 66 00
+		05 05 02 67 02
+		05 05 02 68 15
+		05 05 02 69 15
+		05 05 02 6a 14
+		05 05 02 6b 14
+		05 05 02 6c 0D
+		05 05 02 6d 0D
+		05 05 02 6e 0C
+		05 05 02 6f 0C
+		05 05 02 70 0F
+		05 05 02 71 0F
+		05 05 02 72 0E
+		05 05 02 73 0E
+		05 05 02 74 02
+		05 05 02 75 08
+		05 05 02 76 08
+		05 05 02 77 06
+		05 05 02 78 06
+		05 05 02 79 01
+		05 05 02 7a 01
+		05 05 02 7b 00
+		05 05 02 7c 00
+		05 05 02 7d 02
+		05 05 02 7e 15
+		05 05 02 7f 15
+		05 05 02 80 14
+		05 05 02 81 14
+		05 05 02 82 0D
+		05 05 02 83 0D
+		05 05 02 84 0C
+		05 05 02 85 0C
+		05 05 02 86 0F
+		05 05 02 87 0F
+		05 05 02 88 0E
+		05 05 02 89 0E
+		05 05 02 8A 02
+		39 05 04 FF 98 81 04
+		05 05 02 6E 2B
+		05 05 02 6F 37
+		05 05 02 3A 24
+		05 05 02 8D 1A
+		05 05 02 87 BA
+		05 05 02 B2 D1
+		05 05 02 88 0B
+		05 05 02 38 01
+		05 05 02 39 00
+		05 05 02 B5 02
+		05 05 02 31 25
+		05 05 02 3B 98
+		39 05 04 FF 98 81 01
+		05 05 02 22 0A
+		05 05 02 31 00
+		05 05 02 53 3D
+		05 05 02 55 3D
+		05 05 02 50 B5
+		05 05 02 51 AD
+		05 05 02 60 06
+		05 05 02 62 20
+		05 05 02 A0 00
+		05 05 02 A1 21
+		05 05 02 A2 35
+		05 05 02 A3 19
+		05 05 02 A4 1E
+		05 05 02 A5 33
+		05 05 02 A6 27
+		05 05 02 A7 26
+		05 05 02 A8 AF
+		05 05 02 A9 1B
+		05 05 02 AA 27
+		05 05 02 AB 8D
+		05 05 02 AC 1A
+		05 05 02 AD 1B
+		05 05 02 AE 50
+		05 05 02 AF 26
+		05 05 02 B0 2B
+		05 05 02 B1 54
+		05 05 02 B2 5E
+		05 05 02 B3 23
+		05 05 02 C0 00
+		05 05 02 C1 21
+		05 05 02 C2 35
+		05 05 02 C3 19
+		05 05 02 C4 1E
+		05 05 02 C5 33
+		05 05 02 C6 27
+		05 05 02 C7 26
+		05 05 02 C8 AF
+		05 05 02 C9 1B
+		05 05 02 CA 27
+		05 05 02 CB 8D
+		05 05 02 CC 1A
+		05 05 02 CD 1B
+		05 05 02 CE 50
+		05 05 02 CF 26
+		05 05 02 D0 2B
+		05 05 02 D1 54
+		05 05 02 D2 5E
+		05 05 02 D3 23
+		39 05 04 FF 98 81 00
+		05 05 02 11 00
+		05 78 02 29 00
+		05 78 02 35 00
+	];
+};
+#endif
+
+#if defined(ATK_LCD_TYPE_HDMI_TX0)
+&hdmi0 {
+	status = "okay";
+};
+
+&hdmi0_in_vp0 {
+	status = "okay";
+};
+
+&route_hdmi0 {
+	status = "okay";
+	connect = <&vp0_out_hdmi0>;
+};
+
+&hdptxphy_hdmi0 {
+	status = "okay";
+};
+
+&hdmi0_sound {
+	status = "okay";
+};
+#endif
+
+#if defined(ATK_LCD_TYPE_HDMI_TX1)
+&hdmi1 {
+	status = "okay";
+};
+
+&hdmi1_in_vp1 {
+	status = "okay";
+};
+
+&route_hdmi1 {
+	status = "okay";
+	connect = <&vp1_out_hdmi1>;
+};
+
+&hdptxphy_hdmi1 {
+	status = "okay";
+};
+
+&hdmi1_sound {
+	status = "okay";
+};
+#endif
+
+#if defined(ATK_LCD_TYPE_DP_TX0)
+&dp0 {
+	status = "okay";
+};
+
+&dp0_in_vp2 {
+	status = "okay";
+};
+
+&route_dp0 {
+	status = "disabled";
+	connect = <&vp2_out_dp0>;
+};
+
+&usbdp_phy0_dp {
+	status = "okay";
+};
+
+&dp0_sound {
+	status = "okay";
+};
+#endif
+
+#if defined(ATK_LCD_TYPE_DP_TX1)
+&dp1 {
+	status = "okay";
+};
+
+&dp1_in_vp2 {
+	status = "okay";
+};
+
+&route_dp1 {
+	status = "disabled";
+	connect = <&vp2_out_dp1>;
+};
+
+&usbdp_phy1_dp {
+	status = "okay";
+};
+
+&dp1_sound {
+	status = "okay";
+};
+#endif
+
+&pinctrl {
+	lcd {
+		lcd0_rst_gpio: lcd0-rst-gpio {
+			rockchip,pins = <4 RK_PA3 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+
+		lcd1_rst_gpio: lcd1-rst-gpio {
+			rockchip,pins = <4 RK_PA4 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+
+	touch {
+		touch0_gpio: touch0-gpio {
+			rockchip,pins =
+				<3 RK_PC1 RK_FUNC_GPIO &pcfg_pull_down>,
+				<3 RK_PC0 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+
+		touch1_gpio: touch1-gpio {
+			rockchip,pins =
+				<3 RK_PA6 RK_FUNC_GPIO &pcfg_pull_down>,
+				<3 RK_PD5 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+	};
+};

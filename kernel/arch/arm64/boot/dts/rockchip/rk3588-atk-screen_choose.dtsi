@@ -1,0 +1,39 @@
+/*
+ * RK3588平台支持4路独立的Video Port，可实现4路独立的显示输出
+ * 默认显示通路配置如下所示：
+ * --------------------------------------------
+ * |  VP0 -----------------> HDMI_TX0          |
+ * |  VP1 -----------------> HDMI_TX1          |
+ * |  VP2 -----------------> DP_TX0  DP_TX1    |
+ * |  VP3 -----------------> DSI_TX0  DSI_TX1  |
+ * --------------------------------------------
+ *
+ *
+ * 通过宏定义使能相应的显示接口：
+ * ATK_LCD_TYPE_MIPI_TX0_5P5_720X1280：使能5.5寸720x1280 MIPI屏(MIPI DSI0)
+ * ATK_LCD_TYPE_MIPI_TX0_5P5_1080X1920：使能5.5寸1080x1920 MIPI屏(MIPI DSI0)
+ * ATK_LCD_TYPE_MIPI_TX0_10P1_800X1280：使能10.1寸800x1280 MIPI屏(MIPI DSI0)
+ *
+ * ATK_LCD_TYPE_MIPI_TX1_5P5_720X1280：使能5.5寸720x1280 MIPI屏(MIPI DSI1)
+ * ATK_LCD_TYPE_MIPI_TX1_5P5_1080X1920：使能5.5寸1080x1920 MIPI屏(MIPI DSI1)
+ * ATK_LCD_TYPE_MIPI_TX1_10P1_800X1280：使能10.1寸800x1280 MIPI屏(MIPI DSI1)
+ *
+ * ATK_LCD_TYPE_HDMI_TX0：使能HDMI_TX0显示屏
+ * ATK_LCD_TYPE_HDMI_TX1：使能HDMI_TX1显示屏
+ * ATK_LCD_TYPE_DP_TX0：使能DP_TX0显示屏
+ * ATK_LCD_TYPE_DP_TX1：使能DP_TX1显示屏
+ */
+
+// #define ATK_LCD_TYPE_MIPI_TX0_5P5_720X1280	// from vp3
+#define ATK_LCD_TYPE_MIPI_TX0_5P5_1080X1920	// from vp3
+// #define ATK_LCD_TYPE_MIPI_TX0_10P1_800X1280	// from vp3
+
+// #define ATK_LCD_TYPE_MIPI_TX1_5P5_720X1280	// from vp3
+// #define ATK_LCD_TYPE_MIPI_TX1_5P5_1080X1920	// from vp3
+// #define ATK_LCD_TYPE_MIPI_TX1_10P1_800X1280	// from vp3
+
+#define ATK_LCD_TYPE_HDMI_TX0		// from vp0
+#define ATK_LCD_TYPE_HDMI_TX1		// from vp1
+#define ATK_LCD_TYPE_DP_TX0		// from vp2
+#define ATK_LCD_TYPE_DP_TX1		// from vp2
+

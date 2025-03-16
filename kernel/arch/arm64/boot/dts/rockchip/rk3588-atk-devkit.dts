@@ -1,0 +1,38 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2021 Rockchip Electronics Co., Ltd.
+ *
+ */
+
+/dts-v1/;
+
+#include "rk3588-atk-devkit.dtsi"
+#include "rk3588-atk-cameras.dtsi"
+#include "rk3588-atk-screen_choose.dtsi"
+#include "rk3588-atk-lcds.dtsi"
+#include "rk3588-linux.dtsi"
+
+// #define ATK_DISABLE_USB_WIFI_BT
+
+/ {
+	model = "ATK-DLRK3588 Board";
+	compatible = "rockchip,rk3588-evb7-lp4-v10", "rockchip,rk3588";
+};
+
+#if defined(ATK_DISABLE_USB_WIFI_BT)
+&usb_host0_ehci {
+	status = "disabled";
+};
+
+&usb_host0_ohci {
+	status = "disabled";
+};
+
+&u2phy2 {
+	status = "disabled";
+};
+
+&u2phy2_host {
+	status = "disabled";
+};
+#endif
