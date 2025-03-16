@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2020 Rockchip Electronics Co., Ltd.
+ *
+ */
+
+#define ATK_LCD_TYPE_MIPI_720P
+#define ATK_LCD_TYPE_HDMI
+
+#include "rk3568-atk-evb1-ddr4-v10.dtsi"
+#include "rk3568-linux.dtsi"
+#include "rk3568-lcds.dtsi"
+#include <dt-bindings/display/rockchip_vop.h>
+
+&vp0 {
+	cursor-win-id = <ROCKCHIP_VOP2_CLUSTER0>;
+};
+
+&vp1 {
+	cursor-win-id = <ROCKCHIP_VOP2_CLUSTER1>;
+};
+
+&bt_sco {
+	status = "okay";
+};
+
+&bt_sound {
+	status = "okay";
+};
+
+&i2s3_2ch {
+	status = "okay";
+};

@@ -1,0 +1,30 @@
+/*
+ * 屏幕选择
+ * ATK_LCD_TYPE_MIPI_720P:   正点原子5.5寸 720*1280 MIPI屏
+ * ATK_LCD_TYPE_MIPI_1080P:  正点原子5.5寸 1080*1920 MIPI屏
+ * ATK_LCD_TYPE_MIPI_10P1_800X1280: 正点原子10.1寸 800*1280 MIPI屏
+ * ATK_LCD_TYPE_LVDS:        正点原子10.1寸 1280*800 LVDS屏
+ * ATK_LCD_TYPE_HDMI:        HDMI显示器
+ * ATK_LCD_TYPE_EDP_VGA:     eDP屏或者VGA显示器（硬件默认使能的是VGA接口，若用户需要使用eDP屏，则需修改硬件
+ *                           具体情况可以看正点原子RK3568底板原理图！）
+ */
+/*
+ * RK3568可支持三屏显示，也就是三路显示 VP0 VP1 VP2
+ * 但是三屏显示需要注意一些问题，具体情况可以看正点原子提供的文档<RK3568三屏显示参考手册>！
+ */
+
+/*
+ * ATK_LCD_TYPE_MIPI_720P/ATK_LCD_TYPE_MIPI_1080P/ATK_LCD_TYPE_MIPI_10P1_800X1280 三选一
+ */
+#define ATK_LCD_TYPE_MIPI_720P		// 从VP1输入
+//#define ATK_LCD_TYPE_MIPI_1080P	// 从VP1输入
+//#define ATK_LCD_TYPE_MIPI_10P1_800X1280	// 从VP1输入
+
+/*
+ * ATK_LCD_TYPE_HDMI 和 ATK_LCD_TYPE_EDP_VGA 二选一
+ */
+#define ATK_LCD_TYPE_HDMI		// 从VP0输入
+//#define ATK_LCD_TYPE_EDP_VGA		// 从VP0输入
+
+//#define ATK_LCD_TYPE_LVDS		// 从VP2输入
+
